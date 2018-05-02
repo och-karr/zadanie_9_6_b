@@ -3,17 +3,20 @@
 // } ---> na poczatku to dodalam, ale dziala bez tego wiec chyba
 // niepotrzebne. i nie do konca rozumiem do czego sluzy.
 
+
+
 var list = document.getElementById('list');
 var add = document.getElementById('addElem');
-var num = 0;
 
-add.addEventListener('click', function(e) {
-  var element = document.createElement('li');
-  num=num+1;
-  element.innerHTML = 'item '+num;
-  list.appendChild(element);
-
+add.addEventListener('click', function(e) { //i ta zmienna e - po co tutaj jest?
   var elementsByTagName = document.getElementsByTagName('li');
   var quantityOfLiElements = elementsByTagName.length;
-  console.log(quantityOfLiElements);
+  
+  var element = document.createElement('li');
+  element.innerHTML = 'item '+quantityOfLiElements;
+  list.appendChild(element);
+
+  console.log(quantityOfLiElements+1); //tak dziala
+  console.log('Ilosc elementow to'+quantityOfLiElements+1); //a tak nie! 
+  //Magia Javascriptu z ktorej ogarnieciem nadal mam problem
 });
