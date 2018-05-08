@@ -1,10 +1,3 @@
-// function checkOnclickEvent(param) {
-//   console.log(param);
-// } ---> na poczatku to dodalam, ale dziala bez tego wiec chyba
-// niepotrzebne. i nie do konca rozumiem do czego sluzy.
-
-
-
 var list = document.getElementById('list');
 var add = document.getElementById('addElem');
 
